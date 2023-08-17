@@ -8,7 +8,7 @@
 	top: 0;
 	right: -16px;
     font-family: 'Poppins', sans-serif;
-	width: 98%;
+	width: 100%;
 	padding: 15px;
 	background: #ffffff;
 	z-index: 1000;
@@ -43,11 +43,11 @@
 	width: 130px;
 }
 
-.menu {
+.menu a{
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	color: #1a1a1a;
+	color: #000;
 }
 
 .rightSection {
@@ -76,8 +76,8 @@
 	position: fixed;
 	top: 0;
     font-family: 'Poppins', sans-serif;
-	right: -16px;
-	width: 98%;
+	right: -5px;
+	width: 100%;
 	padding: 15px;
 	background: #ffffff;
 	z-index: 1000;
@@ -103,7 +103,7 @@
 	right: 0;
 	width: 0;
 	height: 100%;
-	background: #ffffff;
+	background: #fff;
 	overflow-y: auto;
 	transition: width 0.4s;
 }
@@ -112,11 +112,11 @@
 	width: 180px;
 }
 
-.menu {
+.menu a{
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	color: #1a1a1a;
+	color: #000;
 }
 
 .rightSection {
