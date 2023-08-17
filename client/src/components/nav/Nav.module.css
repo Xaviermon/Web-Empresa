@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import "normalize.css";
+
+
+.container {
+	max-width: 100%;
+	padding: 1rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+  }
 
 .topBar {
 	display: flex;
@@ -6,11 +16,11 @@
 	align-items: center;
 	position: fixed;
 	top: 0;
-	right: -16px;
     font-family: 'Poppins', sans-serif;
 	width: 100%;
 	padding: 15px;
-	background: #ffffff;
+	background-color: #0c0c0c;
+	margin-bottom: 1.4rem;
 	z-index: 1000;
 }
 
@@ -25,7 +35,13 @@
 	cursor: pointer;
 	display: flex;
 	align-items: center;
+	color: #f9f9f9;
+	 transition: color 0.3s
 }
+
+.sidebarOpen .menuButton {
+	color: #333;
+  }
 
 .sidebar,
 .sidebarOpen {
@@ -34,7 +50,7 @@
 	right: 0;
 	width: 0;
 	height: 100%;
-	background: #ffffff;
+	background:  #333; 
 	overflow-y: auto;
 	transition: width 0.4s;
 }
@@ -79,7 +95,7 @@
 	right: -5px;
 	width: 100%;
 	padding: 15px;
-	background: #ffffff;
+	
 	z-index: 1000;
 }
 

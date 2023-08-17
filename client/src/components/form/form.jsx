@@ -1,4 +1,6 @@
 import style from "./form.module.css";
+import Nav from "../nav/nav";
+
 import { useEffect, useState } from "react";
 const Form = () => {
   const [contact, setContact] = useState({
@@ -14,6 +16,9 @@ const Form = () => {
     setContact({...contact,[property] : value})
   }
   return (
+      <> 
+      
+      <Nav />
     <div className={style.containerForm}>
       <form>
         <header className={style.containerTitleForm}>
@@ -67,6 +72,7 @@ const Form = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 
