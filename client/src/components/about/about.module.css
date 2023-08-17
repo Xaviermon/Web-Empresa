@@ -1,19 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-@import 'normalize.css';
 
-/* Estilos generales para el cuerpo de la página */
-body {
-  background-color: #000;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
+
+
 
 /* Contenedor principal con ancho máximo y un poco de espacio interno */
 .container {
-  max-width: 100%;
-  padding: 10px;
-  margin: 0 auto; /* Centra el contenido horizontalmente */
+  max-width: 90%;
+  padding: .8rem;
+  margin: .5rem ; /* Centra el contenido horizontalmente */
   box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+}
+
+.highlightSection {
+width: 100vw;
+  padding: 40px ;
+  margin: 1rem;
+  text-align: center;
+}
+
+.highlightTitle {
+  font-size: 1.5rem;
+  color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.highlightDescription {
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
+.historyTitle,
+.foundersTitle {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.historyDescription,
+.foundersDescription {
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-bottom: 20px;
 }
 
 /* Tarjeta que contiene cada miembro del equipo */
@@ -142,120 +170,117 @@ body {
 
 /* Estilos específicos para tablets y escritorios */
 @media (min-width: 768px) {
-    .teamSection {
-      display: grid; /* Cambia a un diseño de cuadrícula */
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas con el mismo ancho */
-      gap: 120px; /* Espacio entre las tarjetas */
-    }
-  
-    .member {
-      background-color: #fff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 8px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-  
-    .memberImage {
-      width: 100%;
-      max-height: 200px;
-      border-radius: 8px 8px 0 0;
-      object-fit: cover;
-    }
-  
-    .memberName {
-      font-size: 1rem;
-      color: #333;
-      margin-top: 10px;
-      text-align: center;
-    }
-  
-    .memberRole {
-      font-size: 0.8rem;
-      color: #777;
-      margin-top: 5px;
-    }
-  
-    .memberBio {
-      font-size: 0.9rem;
-      color: #444;
-      text-align: center;
-      padding: 10px;
-    }
+  .teamSection {
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con el mismo ancho */
+    gap: 120px; /* Espacio entre las tarjetas */
   }
 
-  @media (min-width: 1080px) {
-    .teamSection {
-      display: grid; /* Cambia a un diseño de cuadrícula */
-      grid-template-columns: repeat(4, 1fr); /* Dos columnas con el mismo ancho */
-      gap: 120px; /* Espacio entre las tarjetas */
-    }
+  .member {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .memberImage {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+
+  .memberName {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .memberRole {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 5px;
+  }
+
+  .memberBio {
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+    padding: 10px;
+  }
 }
 
-
+@media (min-width: 1080px) {
+  .teamSection {
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Dos columnas con el mismo ancho */
+    gap: 120px; /* Espacio entre las tarjetas */
+  }
+}
 
 /* Separadores creativos */
 .separator {
-    width: 100px;
-    height: 3px;
-    background-color: #333;
-    margin: 20px auto;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(112, 112, 237);
+  margin: 20px auto;
+}
+
+/* Animaciones en Scroll */
+.scrollAnimation {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  margin: 50px auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  /* Animaciones en Scroll */
-  .scrollAnimation {
-    width: 50px;
-    height: 50px;
-    background-color: #ccc;
-    margin: 50px auto;
-    animation: fadeInUp 1s ease-in-out;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Colores de Destaque */
-  .highlightSection {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .highlightTitle {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .highlightDescription {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .highlightButton {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .highlightButton:hover {
-    background-color: #555;
-  }
-  
+}
+
+/* Colores de Destaque */
+.highlightSection {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.highlightTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.highlightDescription {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.highlightButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.highlightButton:hover {
+  background-color: #555;
+}
