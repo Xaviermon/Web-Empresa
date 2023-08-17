@@ -1,33 +1,11 @@
-
-
-
-
 /* Contenedor principal con ancho máximo y un poco de espacio interno */
 .container {
-  max-width: 90%;
-  padding: .8rem;
-  margin: .5rem ; /* Centra el contenido horizontalmente */
+  padding: 0.8rem;
+  margin: 0.5rem; /* Centra el contenido horizontalmente */
+  padding-top: 30px;
   box-sizing: border-box; /* Incluye el padding en el ancho máximo */
 }
 
-.highlightSection {
-width: 100vw;
-  padding: 40px ;
-  margin: 1rem;
-  text-align: center;
-}
-
-.highlightTitle {
-  font-size: 1.5rem;
-  color: #f9f9f9;
-  margin-bottom: 10px;
-}
-
-.highlightDescription {
-  font-size: 1rem;
-  color: #f9f9f9;
-  margin-bottom: 20px;
-}
 
 /* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
 .historyTitle,
@@ -137,6 +115,13 @@ width: 100vw;
   padding: 10px;
 }
 
+.pageContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-top: 100px; /* Ajustar según el tamaño del header */
+  padding: 2rem;
+}
 /* Contenedor para la imagen y el texto */
 .imageContainer,
 .textContainer {
@@ -172,7 +157,7 @@ width: 100vw;
 @media (min-width: 768px) {
   .teamSection {
     display: grid; /* Cambia a un diseño de cuadrícula */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas con el mismo ancho */
+    grid-template-columns: repeat(1fr, 2fr); /* Dos columnas con el mismo ancho */
     gap: 120px; /* Espacio entre las tarjetas */
   }
 
@@ -258,29 +243,8 @@ width: 100vw;
   text-align: center;
 }
 
-.highlightTitle {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.highlightDescription {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.highlightButton {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.highlightButton:hover {
-  background-color: #555;
+@media (min-width: 1200px) {
+  .pageContent {
+    grid-template-columns: 1fr 3fr;
+  }
 }
