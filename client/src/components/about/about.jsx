@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import imgMau from '../../../asset/img/team/imgMau.jpg';
+import imgMau from "../../../asset/img/team/imgMau.jpg";
 
 const memberData = [
   {
@@ -61,12 +61,6 @@ const About = () => {
           </div>
         ))}
       </div>
-
-     
-    
-
-     
-     
     </div>
   );
 };
