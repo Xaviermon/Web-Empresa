@@ -1,9 +1,7 @@
-const Footer = () =>{
-  return (
-    <div>
-      <h1>Footer</h1>
-    </div>
-  )
-}
+import style from "./footer.module.css";
 
-export default Footer
+const Footer = () => {
+  return <footer className={style.footer}>Contenido del footer</footer>;
+};
+
+export default Footer;
