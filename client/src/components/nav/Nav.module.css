@@ -1,0 +1,49 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 60px;
+	background-color: #000;
+    margin: -10px -10px auto;
+	color: #fff;
+	border-bottom: 2px solid #444;
+}
+
+.logo img {
+	width: 120px;
+}
+
+.menu a {
+	margin: 0 25px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.rightSection {
+	display: flex;
+	align-items: center;
+}
+
+.rightSection > * {
+	margin-left: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+a{
+   text-decoration: none;
+	color: #fff; 
+}
+
+.cart {
+	margin-left: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.search button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
