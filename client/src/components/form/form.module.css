@@ -6,6 +6,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  /* position: relative; */
   justify-content: center;
   align-items: center;
   background-color: #0c0c0c;
@@ -56,4 +57,83 @@
   border-bottom: 1px solid #fff;
   background-color: #0c0c0c;
   letter-spacing: 0.3rem;
+}
+@media (min-width: 1200px){
+  .containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerTitleForm{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    padding: 50px;
+  }
+  .containerImagForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+  .containerImagForm img{
+    width: 100%;
+    height: 100%;
+    margin-left: -105px;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1199px){
+  .containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100%;
+  }
+  .containerImagForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+  }
+  .containerImagForm img{
+    width: 100%;
+    height: 100%;
+    margin-left: -105px;
+  }
+  .titleForm {
+    color: white;
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin: 35px;
+    padding: 30px;
+  }
+}
+@media (min-width: 281px) and (max-width: 780px){
+  .containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    flex-direction: column-reverse;
+  }
+  .containerImagForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerImagForm img{
+    width: 0;
+    height: 0;
+  }
 }

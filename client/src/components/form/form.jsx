@@ -3,6 +3,7 @@ import Nav from "../nav/nav";
 import axios from "axios";
 import { useState } from "react";
 import Button from "../UI/button/Button";
+import imgForm from "./imagenForm.jpg"
 
 const Form = () => {
   const [contact, setContact] = useState({
@@ -80,6 +81,9 @@ const Form = () => {
             </Button>
           </div>
         </form>
+        <div className={style.containerImagForm}>
+          <img src={imgForm} alt="" />
+        </div>
       </div>
     </>
   );
