@@ -2,10 +2,7 @@
 @import "normalize.css";
 
 body {
-  margin: 1rem;
   padding: 0;
   background-color: #0c0c0c;
-  margin: 1rem;
   font-family: "Poppins", sans-serif;
 }
-

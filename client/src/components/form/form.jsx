@@ -1,8 +1,8 @@
 import style from "./form.module.css";
 import Nav from "../nav/nav";
 import axios from "axios";
-
 import { useState } from "react";
+import Button from "../UI/button/Button";
 
 const Form = () => {
   const [contact, setContact] = useState({
@@ -21,6 +21,7 @@ const Form = () => {
     alert('mensaje enviado')
     axios.post('http://localhost:3001/form',contact)
   };
+
 
   return (
     <>
