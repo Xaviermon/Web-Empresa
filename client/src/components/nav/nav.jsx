@@ -54,13 +54,11 @@ const Nav = () => {
         <a href="/About">About</a>
         <a href="/Form">Get in Touch</a>
       </div>
-     
     </nav>
   );
 };
 
 export default Nav;
-
 
 /**!SECTION
  * 

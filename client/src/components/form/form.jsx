@@ -1,7 +1,7 @@
 import style from "./form.module.css";
 import Nav from "../nav/nav";
+import Button from "../UI/button/Button";
 import axios from "axios";
-
 import { useState } from "react";
 
 const Form = () => {
@@ -21,7 +21,6 @@ const Form = () => {
     alert('mensaje enviado')
     axios.post('http://localhost:3001/form',contact)
   };
-
   return (
     <>
       <Nav />
@@ -37,6 +36,7 @@ const Form = () => {
               name="name"
               placeholder="Full name"
               value={contact.name}
+
               onChange={handlerChange}
             />
             <input
