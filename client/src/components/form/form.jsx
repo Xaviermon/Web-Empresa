@@ -1,8 +1,9 @@
 import style from "./form.module.css";
 import Nav from "../nav/nav";
 import Button from "../UI/button/Button";
+import axios from "axios";
+import { useState } from "react";
 
-import { useEffect, useState } from "react";
 const Form = () => {
   const [contact, setContact] = useState({
     name: "",
@@ -15,6 +16,10 @@ const Form = () => {
     const property = event.target.name;
     const value = event.target.value;
     setContact({ ...contact, [property]: value });
+  };
+  const handlerSumit = () => {
+    alert('mensaje enviado')
+    axios.post('http://localhost:3001/form',contact)
   };
   return (
     <>
@@ -31,6 +36,7 @@ const Form = () => {
               name="name"
               placeholder="Full name"
               value={contact.name}
+
               onChange={handlerChange}
             />
             <input
@@ -68,7 +74,9 @@ const Form = () => {
                 onChange={handlerChange}
               ></textarea>
             </div>
-            <Button>Send Now</Button>
+            <button className={style.btnForm} onClick={handlerSumit}>
+              SEND NOW
+            </button>
           </div>
         </form>
       </div>
