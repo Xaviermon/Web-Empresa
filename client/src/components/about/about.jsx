@@ -1,6 +1,7 @@
 import styles from "./about.module.css";
 import imgMau from "../../../asset/img/team/imgMau.jpg";
 import Nav from "../nav/nav";
+import Footer from "../footer/footer";
 
 const memberData = [
   {
@@ -101,6 +102,7 @@ const About = () => {
       <div className={styles.teamSection}>
         {memberData.map((member) => teamMember(member))}
       </div>
+      <Footer />
     </div>
   );
 };
