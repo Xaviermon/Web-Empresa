@@ -34,6 +34,7 @@
 /* Efecto de elevación al pasar el ratón */
 .card:hover {
   transform: translateY(-5px);
+  
 }
 
 /* Estilos para los títulos y descripciones */
