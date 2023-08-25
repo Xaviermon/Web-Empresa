@@ -1,11 +1,8 @@
 /* Contenedor principal con ancho máximo y un poco de espacio interno */
 .container {
-  padding: 0.8rem;
-  margin: 0.5rem; /* Centra el contenido horizontalmente */
-  padding-top: 30px;
   box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+  height: auto;
 }
-
 
 /* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
 .historyTitle,
@@ -139,7 +136,9 @@
   .memberImage {
     max-height: 150px;
   }
-
+  .container {
+    margin-top: 2rem;
+  }
   .memberName {
     font-size: 0.9rem;
   }
@@ -151,16 +150,26 @@
   .memberBio {
     font-size: 0.8rem;
   }
+  .topBar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
 }
 
 /* Estilos específicos para tablets y escritorios */
 @media (min-width: 768px) {
   .teamSection {
     display: grid; /* Cambia a un diseño de cuadrícula */
-    grid-template-columns: repeat(1fr, 2fr); /* Dos columnas con el mismo ancho */
+    grid-template-columns: repeat(
+      1fr,
+      2fr
+    ); /* Dos columnas con el mismo ancho */
     gap: 120px; /* Espacio entre las tarjetas */
   }
-
+ 
   .member {
     background-color: #fff;
     text-align: center;
