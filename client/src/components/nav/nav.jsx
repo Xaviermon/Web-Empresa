@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa"; // Importa el icono que desees utilizar
 import styles from "./nav.module.css";
-import logo from "./icon-name.jpeg";
+import logo from "../../../asset/Logo/BlancoFondo-removebg-preview.png";
 import { useState, useEffect } from "react";
 import SearchBar from "../searchbar/searchbar";
 
@@ -36,7 +36,7 @@ const Nav = () => {
       </div>
       <nav className={isOpen ? styles.sidebarOpen : styles.sidebar}>
         <div className={styles.menu}>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/About">About</a>
           <a href="/Form">Get in Touch</a>
         </div>
@@ -50,7 +50,7 @@ const Nav = () => {
         </a>
       </div>
       <div className={styles.menu2}>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/About">About</a>
         <a href="/Form">Get in Touch</a>
       </div>

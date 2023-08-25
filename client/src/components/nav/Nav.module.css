@@ -17,7 +17,7 @@
   font-family: "Poppins", sans-serif;
   width: 100%;
   padding: 15px;
-  background-color: #0c0c0c;
+ 
   margin-bottom: 1.4rem;
   z-index: 1000;
 }
@@ -84,21 +84,15 @@
 
 @media (min-width: 281px) and (max-width: 780px) {
   .topBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    font-family: "Poppins", sans-serif;
-    right: -5px;
-    width: 100%;
-    padding: 15px;
-
-    z-index: 1000;
+   display: flex;
+   justify-content: space-around;
+   gap: 200px;
+   padding: 10px 0;
+ 
   }
 
   .logo img {
-    height: 20px;
+    height: 50px;
   }
 
   .menuButton {
@@ -159,11 +153,8 @@
     align-items: center;
     padding: 30px 60px;
     font-family: "Poppins", sans-serif;
-    background-color: #000;
     margin: 0;
     color: #fff;
-    font-family: "Poppins", sans-serif;
-    border-bottom: 2px solid #444;
   }
 
   .logo2 img {
@@ -213,10 +204,8 @@
     padding: 30px 60px;
     font-family: "Poppins", sans-serif;
     background-color: #000;
-    margin: -10px -10px auto;
     color: #fff;
-    font-family: "Poppins", sans-serif;
-    border-bottom: 2px solid #444;
+
   }
 
   .logo2 img {

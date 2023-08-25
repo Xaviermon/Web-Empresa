@@ -15,7 +15,7 @@ const memberData = [
     name: "Leandro Martínez",
     rol: "Full Stack Developer ",
     image: "miembro2.jpg",
-    bio: "Lean es una desarrolladora Full Stack  que se especializa en el back-end.se Construye soluciones sólidas y escalables en el lado del servidor. Siente pasión por optimizar el código para un rendimiento máximo.",
+    bio: "Lean es una desarrolladora Full Stack  que se especializa en el back-end.Construye soluciones sólidas y escalables en el lado del servidor. Siente pasión por optimizar el código para un rendimiento máximo.",
     location: "Buenos Aires  , Argentina ",
   },
   {
@@ -69,32 +69,44 @@ const About = () => {
       <Nav />
       <h1 className={styles.title}>Acerca de Nuestra Startup</h1>
       <p className={styles.description}>
-        Somos un equipo de cuatro personas apasionadas dedicadas a crear
-        soluciones web innovadoras e impactantes. Nuestro viaje comenzó con una
-        visión compartida de transformar ideas en realidad y proporcionar
-        experiencias en línea excepcionales.
+        En BurguerByte, nos destacamos como un equipo apasionado de
+        desarrolladores fullstack con una visión compartida: convertir la
+        tecnología en soluciones innovadoras y prácticas. Combinamos una
+        diversidad de habilidades, desde el frontend hasta el backend, y un
+        enfoque en la excelencia técnica para crear soluciones completas y
+        creativas. Nuestra pasión por la tecnología se refleja en cada proyecto
+        que emprendemos, mientras construimos relaciones sólidas con nuestros
+        clientes a través de la colaboración y la innovación constante. En
+        BurguerByte, estamos comprometidos con la vanguardia de la industria y
+        ansiosos por continuar construyendo un futuro donde la tecnología se
+        funde con la creatividad para crear un impacto duradero en el mundo
+        digital.
       </p>
       <div className={styles.separator}></div>
       <h2 className={styles.title}>Historia y Visión</h2>
       <p className={styles.description}>
-        En "Rota", creemos que la innovación es la fuerza impulsora que da
-        forma al mundo que nos rodea. Nuestra historia tiene sus raíces en el
-        pasado, en la simple pero poderosa invención que cambió el curso de la
-        historia: la rueda. Como un tributo a este icónico símbolo de progreso,
-        nació "Rota". La rueda, que revolucionó la forma en que la humanidad se
-        movía y se conectaba, es el corazón latente de nuestra visión.
+        Nuestra misión en BurguerByte es transformar el mundo de la tecnología,
+        una línea de código a la vez. Nos comprometemos a proporcionar
+        soluciones fullstack innovadoras y personalizadas que se adapten a las
+        necesidades únicas de cada cliente. A través de nuestra dedicación a la
+        excelencia técnica y nuestra pasión por la creatividad, buscamos
+        empoderar a empresas de todos los tamaños para que abracen el potencial
+        de la era digital y logren sus objetivos con confianza. En BurguerByte,
+        no solo construimos aplicaciones y plataformas; construimos puentes
+        entre la imaginación y la realidad, creando un impacto duradero en el
+        mundo tecnológico.
       </p>
       <div className={styles.separator}></div>
       <h2 className={styles.title}>Fundadores y Pasiones</h2>
       <p className={styles.description}>
-        Detrás de "Rota" se encuentra un equipo apasionado y dedicado de mentes
-        creativas y visionarias. Nuestros fundadores, [Nombre del Fundador 1],
-        [Nombre del Fundador 2], [Nombre del Fundador 3] y [Nombre del Fundador
-        4], comparten una profunda pasión por la innovación tecnológica y la
-        búsqueda constante de nuevas formas de avanzar. Con antecedentes en
-        [Breve descripción de la experiencia y conocimientos de los fundadores],
-        se unieron para dar vida a la visión de "Rota" y continuar el legado de
-        la rueda como un símbolo eterno de cambio y mejora.
+        Detrás de BurguerByte se encuentra un equipo apasionado y dedicado de
+        mentes creativas y visionarias. Nuestros fundadores, Javier Figueroa,
+        Xavier Montero, Leandro Martinez y Mauro Ciappina, comparten una
+        profunda pasión por la innovación tecnológica y la búsqueda constante de
+        nuevas formas de avanzar. Con antecedentes en desarrollo backend,
+        frontend, base de datos, aplicaciones móviles y desarrollo FullStack, se
+        unieron para dar vida a la visión de BurguerByte y continuar marcando la
+        pauta en la innovación tecnológica.
       </p>
       <div className={styles.separator}></div>
 
