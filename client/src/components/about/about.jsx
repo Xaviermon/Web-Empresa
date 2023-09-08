@@ -65,57 +65,60 @@ const About = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <Nav />
-      <h1 className={styles.title}>Acerca de Nuestra Startup</h1>
-      <p className={styles.description}>
-        En BurguerByte, nos destacamos como un equipo apasionado de
-        desarrolladores fullstack con una visión compartida: convertir la
-        tecnología en soluciones innovadoras y prácticas. Combinamos una
-        diversidad de habilidades, desde el frontend hasta el backend, y un
-        enfoque en la excelencia técnica para crear soluciones completas y
-        creativas. Nuestra pasión por la tecnología se refleja en cada proyecto
-        que emprendemos, mientras construimos relaciones sólidas con nuestros
-        clientes a través de la colaboración y la innovación constante. En
-        BurguerByte, estamos comprometidos con la vanguardia de la industria y
-        ansiosos por continuar construyendo un futuro donde la tecnología se
-        funde con la creatividad para crear un impacto duradero en el mundo
-        digital.
-      </p>
-      <div className={styles.separator}></div>
-      <h2 className={styles.title}>Historia y Visión</h2>
-      <p className={styles.description}>
-        Nuestra misión en BurguerByte es transformar el mundo de la tecnología,
-        una línea de código a la vez. Nos comprometemos a proporcionar
-        soluciones fullstack innovadoras y personalizadas que se adapten a las
-        necesidades únicas de cada cliente. A través de nuestra dedicación a la
-        excelencia técnica y nuestra pasión por la creatividad, buscamos
-        empoderar a empresas de todos los tamaños para que abracen el potencial
-        de la era digital y logren sus objetivos con confianza. En BurguerByte,
-        no solo construimos aplicaciones y plataformas; construimos puentes
-        entre la imaginación y la realidad, creando un impacto duradero en el
-        mundo tecnológico.
-      </p>
-      <div className={styles.separator}></div>
-      <h2 className={styles.title}>Fundadores y Pasiones</h2>
-      <p className={styles.description}>
-        Detrás de BurguerByte se encuentra un equipo apasionado y dedicado de
-        mentes creativas y visionarias. Nuestros fundadores, Javier Figueroa,
-        Xavier Montero, Leandro Martinez y Mauro Ciappina, comparten una
-        profunda pasión por la innovación tecnológica y la búsqueda constante de
-        nuevas formas de avanzar. Con antecedentes en desarrollo backend,
-        frontend, base de datos, aplicaciones móviles y desarrollo FullStack, se
-        unieron para dar vida a la visión de BurguerByte y continuar marcando la
-        pauta en la innovación tecnológica.
-      </p>
-      <div className={styles.separator}></div>
-
-      <h2 className={styles.teamTitle}>Conoce a Nuestro Equipo</h2>
-      <div className={styles.teamSection}>
-        {memberData.map((member) => teamMember(member))}
+      <div className={styles.container}>
+        <h1 className={styles.title}>Acerca de Nuestra Startup</h1>
+        <p className={styles.description}>
+          En BurguerByte, nos destacamos como un equipo apasionado de
+          desarrolladores fullstack con una visión compartida: convertir la
+          tecnología en soluciones innovadoras y prácticas. Combinamos una
+          diversidad de habilidades, desde el frontend hasta el backend, y un
+          enfoque en la excelencia técnica para crear soluciones completas y
+          creativas. Nuestra pasión por la tecnología se refleja en cada
+          proyecto que emprendemos, mientras construimos relaciones sólidas con
+          nuestros clientes a través de la colaboración y la innovación
+          constante. En BurguerByte, estamos comprometidos con la vanguardia de
+          la industria y ansiosos por continuar construyendo un futuro donde la
+          tecnología se funde con la creatividad para crear un impacto duradero
+          en el mundo digital.
+        </p>
+        <div className={styles.separator}></div>
+        <h2 className={styles.title}>Historia y Visión</h2>
+        <p className={styles.description}>
+          Nuestra misión en BurguerByte es transformar el mundo de la
+          tecnología, una línea de código a la vez. Nos comprometemos a
+          proporcionar soluciones fullstack innovadoras y personalizadas que se
+          adapten a las necesidades únicas de cada cliente. A través de nuestra
+          dedicación a la excelencia técnica y nuestra pasión por la
+          creatividad, buscamos empoderar a empresas de todos los tamaños para
+          que abracen el potencial de la era digital y logren sus objetivos con
+          confianza. En BurguerByte, no solo construimos aplicaciones y
+          plataformas; construimos puentes entre la imaginación y la realidad,
+          creando un impacto duradero en el mundo tecnológico.
+        </p>
+        <div className={styles.separator}></div>
+        <h2 className={styles.title}>Fundadores y Pasiones</h2>
+        <p className={styles.description}>
+          Detrás de BurguerByte se encuentra un equipo apasionado y dedicado de
+          mentes creativas y visionarias. Nuestros fundadores, Javier Figueroa,
+          Xavier Montero, Leandro Martinez y Mauro Ciappina, comparten una
+          profunda pasión por la innovación tecnológica y la búsqueda constante
+          de nuevas formas de avanzar. Con antecedentes en desarrollo backend,
+          frontend, base de datos, aplicaciones móviles y desarrollo FullStack,
+          se unieron para dar vida a la visión de BurguerByte y continuar
+          marcando la pauta en la innovación tecnológica.
+        </p>
+        <div className={styles.separator}></div>
+        <div className={styles.teamContainer}>
+          <h2 className={styles.teamTitle}>Conoce a Nuestro Equipo</h2>
+          <div className={styles.teamSection}>
+            {memberData.map((member) => teamMember(member))}
+          </div>
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

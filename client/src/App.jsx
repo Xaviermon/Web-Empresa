@@ -5,7 +5,7 @@ import Form from "./components/form/form";
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer/footer";
 import Contrata from "./components/contrata/contrata";
-import "./App.css";
+
 
 function App() {
   return (
