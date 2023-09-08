@@ -1,7 +1,14 @@
 /* Contenedor principal con ancho máximo y un poco de espacio interno */
 .container {
-  box-sizing: border-box; /* Incluye el padding en el ancho máximo */
+  box-sizing: border-box;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  margin: 1rem;
+  padding: 5rem;
 }
 
 /* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
@@ -34,15 +41,15 @@
 /* Efecto de elevación al pasar el ratón */
 .card:hover {
   transform: translateY(-5px);
-  
 }
 
 /* Estilos para los títulos y descripciones */
 .title,
-.description,
-.teamTitle {
+.description{
   color: #fff;
   text-align: center;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .title {
@@ -56,19 +63,9 @@
 }
 
 /* Sección del equipo con alineación vertical y centrada */
-.teamSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* Título del equipo */
-.teamTitle {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  width: 100%;
-}
 
 /* Cada miembro del equipo */
 .member {
@@ -170,7 +167,7 @@
     ); /* Dos columnas con el mismo ancho */
     gap: 120px; /* Espacio entre las tarjetas */
   }
- 
+
   .member {
     background-color: #fff;
     text-align: center;
@@ -257,4 +254,37 @@
   .pageContent {
     grid-template-columns: 1fr 3fr;
   }
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  flex-wrap: wrap;
+  column-count: 3;
+}
+
+.teamTitle {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: .5rem;
+  color: #f9f9f9; 
+
+}
+
+.teamSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 120%;
+}
+.teamMember {
+  margin-bottom: 20px;
 }
