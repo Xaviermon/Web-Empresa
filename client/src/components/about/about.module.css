@@ -7,8 +7,8 @@
   justify-content: center;
   width: 100vw;
   align-items: center;
-  margin: 1rem;
-  padding: 5rem;
+/*   margin: 1rem;
+  padding: 5rem; */
 }
 
 /* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
@@ -48,6 +48,7 @@
 .description{
   color: #fff;
   text-align: center;
+  width: 70%;
   margin: 1rem;
   padding: 1rem;
 }

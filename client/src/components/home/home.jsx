@@ -1,5 +1,4 @@
 import Nav from "../nav/nav.jsx";
-import Footer from "../footer/footer";
 import Button from "../UI/button/Button.jsx";
 import style from "./home.module.css";
 import logo from "../../../asset/Logo/BlancoFondo-removebg-preview.png";

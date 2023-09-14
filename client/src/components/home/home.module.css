@@ -4,8 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em; /* Añade espacio alrededor del contenido */
-  min-height: 100vh; /* Cambiado de 'height' a 'min-height' */
+  min-height: 100%; /* Cambiado de 'height' a 'min-height' */
   box-sizing: border-box; /* Para incluir el padding en el tamaño total */
 }
 

@@ -2,7 +2,6 @@ import { FaBars } from "react-icons/fa"; // Importa el icono que desees utilizar
 import styles from "./nav.module.css";
 import logo from "../../../asset/Logo/BlancoFondo-removebg-preview.png";
 import { useState, useEffect } from "react";
-import SearchBar from "../searchbar/searchbar";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
