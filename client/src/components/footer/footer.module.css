@@ -10,13 +10,18 @@
 .socialIcons {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 15px 0;
+}
+
+.footerText {
+  font-size: 14px;
+  margin-top: 10px 0;
 }
 
 .socialIcons a {
   color: white;
   font-size: 24px;
-  margin: 0 10px;
+  margin: 10px;
   transition: color 0.3s ease-in-out;
 }
 

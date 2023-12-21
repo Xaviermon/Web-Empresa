@@ -13,8 +13,8 @@ const Home = () => {
         <div className={style.heroInfo}>
           <h1 className={style.h1}>Desarrollo FullStack</h1>
           <h4 className={style.h4}>Sabores en código, servidos a tu estilo</h4>
-          <Link to="/Contrata">
-            <Button>Contrata</Button>
+          <Link to="/Form">
+            <Button>Get in touch</Button>
           </Link>
         </div>
       </main>
