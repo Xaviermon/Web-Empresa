@@ -35,34 +35,6 @@ const memberData = [
 ];
 
 const About = () => {
-  const highlightSection = (title, description) => {
-    return (
-      <div className={styles.highlightSection}>
-        <h2 className={styles.highlightTitle}>{title}</h2>
-        <p className={styles.highlightDescription}>{description}</p>
-      </div>
-    );
-  };
-
-  const teamMember = (member) => {
-    return (
-      <div className={`${styles.member} ${styles.card}`} key={member.index}>
-        <div className={styles.imageContainer}>
-          <img
-            src={member.image}
-            alt={`Miembro ${member.index + 1}`}
-            className={styles.memberImage}
-          />
-        </div>
-        <div className={styles.textContainer}>
-          <h2 className={styles.memberName}>{member.name}</h2>
-          <h5 className={styles.memberRole}>{member.rol}</h5>
-          <p className={styles.memberBio}>{member.bio}</p>
-          <h7 className={styles.memberLocation}>{member.location}</h7>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <>
@@ -109,13 +81,7 @@ const About = () => {
           se unieron para dar vida a la visión de BurguerByte y continuar
           marcando la pauta en la innovación tecnológica.
         </p>
-        <div className={styles.separator}></div>
-        <div className={styles.teamContainer}>
-          <h2 className={styles.teamTitle}>Conoce a Nuestro Equipo</h2>
-          <div className={styles.teamSection}>
-            {memberData.map((member) => teamMember(member))}
-          </div>
-        </div>
+       
       </div>
       <Footer />
     </>
@@ -123,3 +89,33 @@ const About = () => {
 };
 
 export default About;
+
+/* const highlightSection = (title, description) => {
+  return (
+    <div className={styles.highlightSection}>
+      <h2 className={styles.highlightTitle}>{title}</h2>
+      <p className={styles.highlightDescription}>{description}</p>
+    </div>
+  );
+};
+
+const teamMember = (member) => {
+  return (
+    <div className={`${styles.member} ${styles.card}`} key={member.index}>
+      <div className={styles.imageContainer}>
+        <img
+          src={member.image}
+          alt={`Miembro ${member.index + 1}`}
+          className={styles.memberImage}
+        />
+      </div>
+      <div className={styles.textContainer}>
+        <h2 className={styles.memberName}>{member.name}</h2>
+        <h5 className={styles.memberRole}>{member.rol}</h5>
+        <p className={styles.memberBio}>{member.bio}</p>
+        <h7 className={styles.memberLocation}>{member.location}</h7>
+      </div>
+    </div>
+  );
+};
+*/
