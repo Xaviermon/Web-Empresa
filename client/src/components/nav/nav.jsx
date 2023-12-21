@@ -37,7 +37,7 @@ const Nav = () => {
         <div className={styles.menu}>
           <a href="/">Home</a>
           <a href="/About">About</a>
-          <a href="/Form">Get in Touch</a>
+          <a href="/Form">Contacto</a>
         </div>
       </nav>
     </>
@@ -51,7 +51,7 @@ const Nav = () => {
       <div className={styles.menu2}>
         <a href="/">Home</a>
         <a href="/About">About</a>
-        <a href="/Form">Get in Touch</a>
+        <a href="/Form">Contacto</a>
       </div>
     </nav>
   );
