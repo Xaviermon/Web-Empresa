@@ -3,7 +3,7 @@ import Nav from "../nav/nav";
 import axios from "axios";
 import { useState } from "react";
 import Button from "../UI/button/Button";
-import imgForm from "./imagenForm.jpg"
+import imgForm from "./imagenForm.jpg";
 
 const Form = () => {
   const [contact, setContact] = useState({
@@ -13,14 +13,16 @@ const Form = () => {
     subject: "",
     message: "",
   });
-  const handlerChange = (event) => {
+
+  const handleChange = (event) => {
     const property = event.target.name;
     const value = event.target.value;
     setContact({ ...contact, [property]: value });
   };
-  const handlerSumit = () => {
-    alert('mensaje enviado')
-    axios.post('http://localhost:3001/form',contact)
+
+  const handleSubmit = () => {
+    alert('Mensaje enviado');
+    axios.post('http://localhost:3001/form', contact);
   };
 
   return (
@@ -29,41 +31,40 @@ const Form = () => {
       <div className={style.containerForm}>
         <form>
           <header className={style.containerTitleForm}>
-            <h1 className={style.titleForm}>Contact Us</h1>
+            <h1 className={style.titleForm}>Contacto</h1>
           </header>
           <div className={style.containerInputs}>
             <input
               className={style.inputsForm}
               type="text"
               name="name"
-              placeholder="Full name"
+              placeholder="Nombre completo"
               value={contact.name}
-
-              onChange={handlerChange}
+              onChange={handleChange}
             />
             <input
               className={style.inputsForm}
               type="text"
               name="cellphone"
-              placeholder="Cellphone"
+              placeholder="Teléfono"
               value={contact.cellphone}
-              onChange={handlerChange}
+              onChange={handleChange}
             />
             <input
               className={style.inputsForm}
               type="text"
               name="email"
-              placeholder="your@mail.com"
+              placeholder="correo@correo.com"
               value={contact.email}
-              onChange={handlerChange}
+              onChange={handleChange}
             />
             <input
               className={style.inputsForm}
               type="text"
               name="subject"
-              placeholder="Query subject"
+              placeholder="Asunto de la consulta"
               value={contact.subject}
-              onChange={handlerChange}
+              onChange={handleChange}
             />
             <div>
               <textarea
@@ -71,14 +72,12 @@ const Form = () => {
                 name="message"
                 cols="30"
                 rows="10"
-                placeholder="Drop us a line ..."
+                placeholder="Déjanos un mensaje"
                 value={contact.message}
-                onChange={handlerChange}
+                onChange={handleChange}
               ></textarea>
             </div>
-            <Button onClick={handlerSumit}>
-              SEND NOW
-            </Button>
+            <Button onClick={handleSubmit}>ENVIAR AHORA</Button>
           </div>
         </form>
         <div className={style.containerImagForm}>
