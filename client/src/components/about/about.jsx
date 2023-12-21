@@ -40,7 +40,7 @@ const About = () => {
     <>
       <Nav />
       <div className={styles.container}>
-        <h1 className={styles.title}>Acerca de Nuestra Startup</h1>
+        <h1 className={styles.title}>Quienes somos</h1>
         <p className={styles.description}>
           En BurguerByte, nos destacamos como un equipo apasionado de
           desarrolladores fullstack con una visión compartida: convertir la
@@ -69,18 +69,7 @@ const About = () => {
           plataformas; construimos puentes entre la imaginación y la realidad,
           creando un impacto duradero en el mundo tecnológico.
         </p>
-        <div className={styles.separator}></div>
-        <h2 className={styles.title}>Fundadores y Pasiones</h2>
-        <p className={styles.description}>
-          Detrás de BurguerByte se encuentra un equipo apasionado y dedicado de
-          mentes creativas y visionarias. Nuestros fundadores, Javier Figueroa,
-          Xavier Montero, Leandro Martinez y Mauro Ciappina, comparten una
-          profunda pasión por la innovación tecnológica y la búsqueda constante
-          de nuevas formas de avanzar. Con antecedentes en desarrollo backend,
-          frontend, base de datos, aplicaciones móviles y desarrollo FullStack,
-          se unieron para dar vida a la visión de BurguerByte y continuar
-          marcando la pauta en la innovación tecnológica.
-        </p>
+        
        
       </div>
       <Footer />

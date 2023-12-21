@@ -7,9 +7,9 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 781);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+const toggleSidebar = () => {
+  setIsOpen(prevIsOpen => !prevIsOpen);
+};
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,7 +36,7 @@ const Nav = () => {
       <nav className={isOpen ? styles.sidebarOpen : styles.sidebar}>
         <div className={styles.menu}>
           <a href="/">Home</a>
-          <a href="/About">About</a>
+          <a href="/About">Quienes somos</a>
           <a href="/Form">Contacto</a>
         </div>
       </nav>
@@ -50,7 +50,7 @@ const Nav = () => {
       </div>
       <div className={styles.menu2}>
         <a href="/">Home</a>
-        <a href="/About">About</a>
+        <a href="/About">Quienes somos</a>
         <a href="/Form">Contacto</a>
       </div>
     </nav>

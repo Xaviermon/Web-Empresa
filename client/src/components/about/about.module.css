@@ -7,9 +7,16 @@
   justify-content: center;
   width: 100vw;
   align-items: center;
+  min-height: 100vh;
 /*   margin: 1rem;
   padding: 5rem; */
 }
+
+/* Estilos específicos para el footer */
+.footer {
+  margin-top: auto; /* Empuja el footer hacia abajo ocupando el espacio restante en el contenedor principal */
+}
+
 
 /* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
 .historyTitle,
@@ -289,3 +296,4 @@
 .teamMember {
   margin-bottom: 20px;
 }
+
