@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 import Button from "../UI/button/Button";
 import imgForm from "./imagenForm.jpg";
+import Footer from "../footer/footer";
 
 const Form = () => {
   const [contact, setContact] = useState({
@@ -84,6 +85,7 @@ const Form = () => {
           <img src={imgForm} alt="" />
         </div>
       </div>
+        <Footer />
     </>
   );
 };
