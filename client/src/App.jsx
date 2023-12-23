@@ -3,7 +3,9 @@ import Home from "./components/home/home";
 import About from "./components/about/about";
 import Form from "./components/form/form";
 import Nav from "./components/nav/nav";
-import Footer from './components/footer/footer'
+import Footer from "./components/footer/footer";
+import Contrata from "./components/contrata/contrata";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Form" element={<Form />} />
+        <Route path="/Contrata" element={<Contrata />} />
         <Route path="/Nav" element={<Nav />} />
         <Route path="/Footer" element={<Footer />} />
       </Routes>

@@ -1,0 +1,299 @@
+/* Contenedor principal con ancho máximo y un poco de espacio interno */
+.container {
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  min-height: 100vh;
+/*   margin: 1rem;
+  padding: 5rem; */
+}
+
+/* Estilos específicos para el footer */
+.footer {
+  margin-top: auto; /* Empuja el footer hacia abajo ocupando el espacio restante en el contenedor principal */
+}
+
+
+/* Estilos para los títulos y descripciones en las secciones "Historia y Visión" y "Fundadores y Pasiones" */
+.historyTitle,
+.foundersTitle {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+.historyDescription,
+.foundersDescription {
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+/* Tarjeta que contiene cada miembro del equipo */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+/* Efecto de elevación al pasar el ratón */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para los títulos y descripciones */
+.title,
+.description{
+  color: #fff;
+  text-align: center;
+  width: 70%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Sección del equipo con alineación vertical y centrada */
+
+
+/* Título del equipo */
+
+/* Cada miembro del equipo */
+.member {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del miembro */
+.memberImage {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+
+/* Nombre del miembro */
+.memberName {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Rol del miembro */
+.memberRole {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Biografía del miembro */
+.memberBio {
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+  padding: 10px;
+}
+
+.pageContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-top: 100px; /* Ajustar según el tamaño del header */
+  padding: 2rem;
+}
+/* Contenedor para la imagen y el texto */
+.imageContainer,
+.textContainer {
+  width: 100%;
+}
+
+/* Contenedor para el texto */
+.textContainer {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .memberImage {
+    max-height: 150px;
+  }
+  .container {
+    margin-top: 2rem;
+  }
+  .memberName {
+    font-size: 0.9rem;
+  }
+
+  .memberRole {
+    font-size: 0.7rem;
+  }
+
+  .memberBio {
+    font-size: 0.8rem;
+  }
+  .topBar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+}
+
+/* Estilos específicos para tablets y escritorios */
+@media (min-width: 768px) {
+  .teamSection {
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: repeat(
+      1fr,
+      2fr
+    ); /* Dos columnas con el mismo ancho */
+    gap: 120px; /* Espacio entre las tarjetas */
+  }
+
+  .member {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .memberImage {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+
+  .memberName {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .memberRole {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 5px;
+  }
+
+  .memberBio {
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .teamSection {
+    display: grid; /* Cambia a un diseño de cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Dos columnas con el mismo ancho */
+    gap: 120px; /* Espacio entre las tarjetas */
+  }
+}
+
+/* Separadores creativos */
+.separator {
+  width: 100px;
+  height: 3px;
+  background-color: rgb(112, 112, 237);
+  margin: 20px auto;
+}
+
+/* Animaciones en Scroll */
+.scrollAnimation {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  margin: 50px auto;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Colores de Destaque */
+.highlightSection {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .pageContent {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  flex-wrap: wrap;
+  column-count: 3;
+}
+
+.teamTitle {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: .5rem;
+  color: #f9f9f9; 
+
+}
+
+.teamSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 120%;
+}
+.teamMember {
+  margin-bottom: 20px;
+}
+

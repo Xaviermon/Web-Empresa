@@ -1,0 +1,258 @@
+/* contrata.module.css */
+
+/* Contenedor */
+
+.container {
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  margin: 1rem;
+  padding: 5rem;
+}
+
+.containerTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Flex y alineación de ítems */
+.smFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tamaño de fuente */
+.text3xl {
+  font-size: 1.875rem;
+}
+
+/* Colores de texto */
+.textGray800 {
+  color: #333;
+}
+
+.darkTextGray100 {
+  color: #f7fafc;
+}
+
+.textGray500 {
+  color: #718096;
+}
+
+.darkTextGray400 {
+  color: #a0aec0;
+}
+
+/* Overflow */
+.overflowHidden {
+  overflow: hidden;
+}
+
+/* Borde */
+.border {
+  border-width: 1px;
+  border-color: #2d3748;
+}
+
+/* Borde redondeado */
+.roundedLg {
+  border-radius: 0.5rem;
+}
+
+/* Color de borde */
+.darkBorderGray700 {
+  border-color: #2d3748;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+/* Padding horizontal */
+.px3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Ancho */
+.w12 {
+  width: 3rem;
+}
+
+/* Ancho automático */
+.smWAuto {
+  width: auto;
+}
+
+/* Padding vertical */
+.py1 {
+  padding: 0.25rem 0;
+}
+
+/* Color de texto */
+.textWhite {
+  color: #fff;
+}
+
+/* Fondo azul */
+.bgBlue500 {
+  background-color: rgb(112, 112, 237);
+}
+
+/* Hover oscuro */
+.darkHoverBgGray700:hover {
+  background-color: #2d3748;
+}
+
+/* Colores de texto */
+.textGray600 {
+  color: #4a5568;
+}
+
+.darkTextGray400 {
+  color: #a0aec0;
+}
+
+/* Padding */
+.px6 {
+  padding: 1.5rem;
+}
+
+.py4 {
+  padding: 1rem 0;
+}
+
+/* Transiciones */
+.transitionColors {
+  transition-property: color;
+}
+
+.duration200 {
+  transition-duration: 0.2s;
+}
+
+/* Transformación */
+.transform {
+  transform: none;
+}
+
+/* Tamaño de fuente */
+.textLg {
+  font-size: 1.125rem;
+}
+
+/* Peso de fuente */
+.fontMedium {
+  font-weight: 500;
+}
+
+/* Margen superior */
+.mt2 {
+  margin-top: 0.5rem;
+}
+
+/* Tamaño de fuente */
+.text4xl {
+  font-size: 2.25rem;
+}
+
+/* Peso de fuente */
+.fontSemibold {
+  font-weight: 600;
+}
+
+/* Margen superior */
+.mt8 {
+  margin-top: 2rem;
+}
+
+/* Espaciado vertical */
+.spaceY8 > * + * {
+  margin-top: 2rem;
+}
+
+/* Margen horizontal */
+.mx4 {
+  margin: 0 1rem;
+}
+
+/* Colores de texto */
+.textGray700 {
+  color: #4a5568;
+}
+
+/* Ancho */
+.w5 {
+  width: 1.25rem;
+}
+
+/* Alto */
+.h5 {
+  height: 1.25rem;
+}
+
+/* Colores de texto */
+.textBlue500 {
+  color: #4299e1;
+}
+
+/* Ancho completo */
+.wFull {
+  width: 100%;
+}
+
+/* Padding horizontal */
+.px4 {
+  padding: 1rem;
+}
+
+/* Padding vertical */
+.py2 {
+  padding: 0.5rem 0;
+}
+
+/* Margen superior */
+.mt10 {
+  margin-top: 2.5rem;
+}
+
+/* Espaciado de letras */
+.trackingWide {
+  letter-spacing: 0.025em;
+}
+
+/* Capitalización de texto */
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Enfoque y contorno */
+.focusOutlineNone:focus {
+  outline: 2px solid transparent;
+}
+
+.focusBgBlue600:focus {
+  background-color: #2b6cb0;
+}
+
+/* Media Queries para ajustar el diseño en tablet y desktop */
+@media screen and (min-width: 768px) {
+  .smFlex {
+    flex-direction: row;
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}

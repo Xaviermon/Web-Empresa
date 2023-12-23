@@ -1,0 +1,30 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(112, 112, 237);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px 0;
+}
+
+.footerText {
+  font-size: 14px;
+  margin-top: 10px 0;
+}
+
+.socialIcons a {
+  color: white;
+  font-size: 24px;
+  margin: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.socialIcons a:hover {
+  color: #ffd700;
+}
